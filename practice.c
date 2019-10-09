@@ -14,5 +14,7 @@ if(S_ISREG(sta.st_mode))
 printf("is regular file");
 else if(S_ISDIR(sta.st_mode))
 printf("it is a regular file");
+else {
+  printf("no file found")
 close(fd);
 }
